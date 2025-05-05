@@ -25,7 +25,7 @@ const deployNFTMarketplace: DeployFunction = async function (
       "Shark721NFT", // name
       "SHK721", // symbol
       deployer, // royalty recipient
-      500, // royaltyBps (5%)
+      100, // royaltyBps (1%)
     ],
     log: true,
   });

@@ -4,7 +4,7 @@
     "clean": "hardhat clean",
     "compile": "hardhat compile",
     "test": "npm run compile && hardhat test",
-    "deploy:verify": "npx hardhat deploy --tags Simulate --network hardhat",
+    "deploy:verify": "npx hardhat deploy --tags Simulate --network localhost",
     "deploy:sepolia": "npx hardhat deploy --tags NFT_MP --network sepolia"
   },
   "devDependencies": {

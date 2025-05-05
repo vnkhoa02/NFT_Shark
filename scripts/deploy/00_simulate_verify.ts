@@ -8,7 +8,7 @@ const simulateDeploy: DeployFunction = async function (
   const { deploy } = deployments;
   const { deployer } = await getNamedAccounts();
 
-  if (network.name !== "hardhat") {
+  if (network.name !== "hardhat" && network.name !== "localhost") {
     console.log("⚠️ Simulation should only run on hardhat fork!");
     return;
   }
