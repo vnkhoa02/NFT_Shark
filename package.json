@@ -5,7 +5,7 @@
     "compile": "hardhat compile",
     "test": "npm run compile && hardhat test",
     "deploy:verify": "npx hardhat deploy --tags Simulate --network hardhat",
-    "deploy:sepolia": "npx hardhat deploy --tags StakingV1 --network sepolia"
+    "deploy:sepolia": "npx hardhat deploy --tags NFT_MP --network sepolia"
   },
   "devDependencies": {
     "hardhat": "^2.23.0"
