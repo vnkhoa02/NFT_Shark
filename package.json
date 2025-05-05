@@ -1,0 +1,22 @@
+{
+  "name": "nft_shark",
+  "scripts": {
+    "clean": "hardhat clean",
+    "compile": "hardhat compile",
+    "test": "npm run compile && hardhat test",
+    "deploy:verify": "npx hardhat deploy --tags Simulate --network hardhat",
+    "deploy:sepolia": "npx hardhat deploy --tags StakingV1 --network sepolia"
+  },
+  "devDependencies": {
+    "hardhat": "^2.23.0"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.8",
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^4.9.3",
+    "@typechain/hardhat": "^9.1.0",
+    "dotenv": "^16.5.0",
+    "hardhat-deploy": "^1.0.2"
+  }
+}
