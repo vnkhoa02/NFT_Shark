@@ -49,7 +49,7 @@ Whether you're an NFT enthusiast, developer, or crypto trader, Shark NFT Marketp
 
 ---
 ```bash
-git clone [https://github.com/vnkhoa02/smart_staking](https://github.com/vnkhoa02/NFT_Shark_Marketplace.git)
+git clone https://github.com/vnkhoa02/NFT_Shark_Marketplace.git
 pnpm install
 git clone https://github.com/vnkhoa02/NFT_Shark.git
 npm install
