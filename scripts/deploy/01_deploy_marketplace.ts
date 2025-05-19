@@ -12,24 +12,24 @@ const deployNFTMarketplace: DeployFunction = async function (
   console.log("⛓ Deploying NFTMarketplace...");
   const nftMarketplace = await deploy("NFTMarketplace", {
     from: deployer,
-    args: [], // ← no args
+    args: [200, deployer],
     log: true,
   });
   console.log(`✅ NFTMarketplace deployed to: ${nftMarketplace.address}`);
 
   // 2) Deploy Shark721NFT with the correct constructor parameters
-  console.log("🦈 Deploying Shark721NFT...");
-  const shark721 = await deploy("Shark721NFT", {
-    from: deployer,
-    args: [
-      "Shark721NFT", // name
-      "SHK721", // symbol
-      deployer, // royalty recipient
-      100, // royaltyBps (1%)
-    ],
-    log: true,
-  });
-  console.log(`✅ Shark721NFT deployed to: ${shark721.address}`);
+  // console.log("🦈 Deploying Shark721NFT...");
+  // const shark721 = await deploy("Shark721NFT", {
+  //   from: deployer,
+  //   args: [
+  //     "Shark721NFT", // name
+  //     "SHK721", // symbol
+  //     deployer, // royalty recipient
+  //     100, // royaltyBps (1%)
+  //   ],
+  //   log: true,
+  // });
+  // console.log(`✅ Shark721NFT deployed to: ${shark721.address}`);
 };
 
 export default deployNFTMarketplace;
